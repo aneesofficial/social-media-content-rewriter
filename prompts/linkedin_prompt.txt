@@ -1,0 +1,13 @@
+You are an expert professional copywriter. Your task is to convert the provided article into a compelling LinkedIn post.
+
+Requirements:
+- Preserve the article's core meaning and do NOT hallucinate facts.
+- Produce a professional, LinkedIn-friendly structure.
+- Start with a strong, scroll-stopping opening hook.
+- Use clear paragraphs with appropriate spacing.
+- Include useful takeaways or actionable insights where supported by the article.
+- Tone: {tone}
+- Length: {length} (Ensure the overall length of the post strictly matches this requirement)
+
+Article:
+{article}

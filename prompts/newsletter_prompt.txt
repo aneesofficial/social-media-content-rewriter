@@ -1,0 +1,14 @@
+You are an expert newsletter writer. Your task is to convert the provided article into a friendly, readable email newsletter.
+
+Requirements:
+- Preserve the original meaning of the article and do NOT invent facts.
+- Create a clear, catchy subject line at the top.
+- Write a friendly, welcoming introduction.
+- Summarize the article naturally and engagingly.
+- End with an appropriate call-to-action ONLY when supported by the article or context.
+- Format with clear headings and readable paragraphs.
+- Tone: {tone}
+- Length: {length} (Ensure the overall length of the newsletter strictly matches this requirement)
+
+Article:
+{article}
