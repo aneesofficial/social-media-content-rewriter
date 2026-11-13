@@ -51,7 +51,7 @@ def perform_generation(article_text, platform, tone, length):
         st.session_state.error_msg = "The article is too short. Please provide at least 10 words of context."
         return
 
-    with st.spinner(f"✨ Optimizing content for {platform} in a {tone.lower()} tone..."):
+    with st.spinner(f"Optimizing content for {platform} in a {tone.lower()} tone..."):
         try:
             platform_map = {
                 "Twitter / X": "twitter",
@@ -84,7 +84,7 @@ def main():
     init_session_state()
     
     # 1. Branding
-    st.title("✨ AI Social Media Content Rewriter")
+    st.title("AI Social Media Content Rewriter")
     st.markdown("Transform your articles and blog posts into platform-optimized social media content.")
     st.markdown("---")
     
@@ -125,9 +125,9 @@ def main():
     # Buttons
     col_btn1, col_btn2 = st.columns([1, 1])
     with col_btn1:
-        generate_clicked = st.button("🚀 Rewrite Content", type="primary", use_container_width=True)
+        generate_clicked = st.button("Rewrite Content", type="primary", use_container_width=True)
     with col_btn2:
-        reset_clicked = st.button("🗑️ Clear / Reset", use_container_width=True)
+        reset_clicked = st.button("Clear / Reset", use_container_width=True)
         
     if reset_clicked:
         clear_data()
@@ -148,7 +148,7 @@ def main():
         
     # Display Generated Content
     if st.session_state.generated_content and not st.session_state.error_msg:
-        st.success("✅ Content generated successfully!")
+        st.success("Content generated successfully!")
         
         st.markdown("### Generated Result")
         
@@ -159,10 +159,10 @@ def main():
         st.write(st.session_state.generated_content)
         st.markdown("---")
             
-        st.caption("💡 *Tip: Highlight the text above to copy it to your clipboard.*")
+        st.caption("*Tip: Highlight the text above to copy it to your clipboard.*")
         
         # Regeneration Button near the generated result
-        if st.button("🔄 Regenerate", use_container_width=False):
+        if st.button("Regenerate", use_container_width=False):
             st.session_state.article_text = article_text
             st.session_state.selected_platform = platform
             st.session_state.selected_tone = tone
